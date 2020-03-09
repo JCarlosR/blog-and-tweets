@@ -28,6 +28,42 @@
                     @endif
                 </div>
             </div>
+
+            <div class="card mt-4">
+                <div class="card-header">Twitter</div>
+
+                @if ($twitterConnected)
+                    <ul class="list-group list-group-flush">
+                        @foreach ($tweets as $tweet)
+                            <li class="list-group-item">
+                                <p><small>{{ $tweet['created_at'] }}</small></p>
+                                <p>{{ $tweet['text'] }}</p>
+
+                                @if ($tweet['hidden'])
+                                    <a href="{{ url('/tweets?hidden=0&id='.$tweet['id']) }}">
+                                        Un-hide tweet
+                                    </a>
+                                @else
+                                    <a href="{{ url('/tweets?hidden=1&id='.$tweet['id']) }}">
+                                        Hide tweet
+                                    </a>
+                                @endif
+                            </li>
+                        @endforeach
+                        <li class="list-group-item">
+                            <a href="{{ url('/twitter/logout') }}" class="btn btn-primary">
+                                Disconnect your Twitter account
+                            </a>
+                        </li>
+                    </ul>
+                @else
+                    <div class="card-body">
+                        <a href="{{ url('/twitter/login') }}" class="btn btn-primary">
+                            Connect your Twitter account
+                        </a>
+                    </div>
+                @endif
+            </div>
         </div>
     </div>
 </div>
