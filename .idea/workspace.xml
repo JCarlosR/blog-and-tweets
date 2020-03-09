@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0150775b-9c97-4318-95fc-2b2f8b93f0d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Entry.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Entry.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GuestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GuestController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_08_165752_create_entries_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_08_165752_create_entries_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/users/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -140,7 +139,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/users" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Exceptions" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -165,7 +164,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583685152479</updated>
-      <workItem from="1583685153822" duration="10880000" />
+      <workItem from="1583685153822" duration="19514000" />
     </task>
     <servers />
   </component>
@@ -176,13 +175,21 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="663" y="214" key="FileChooserDialogImpl" timestamp="1583725794457">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="663" y="214" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1583725794457" />
+    <state x="663" y="273" key="NewPhpClassDialog" timestamp="1583725796741">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="663" y="273" key="NewPhpClassDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1583725796741" />
     <state x="718" y="414" key="NewPhpFileDialog" timestamp="1583687343462">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="718" y="414" key="NewPhpFileDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1583687343462" />
-    <state x="546" y="189" width="672" height="678" key="search.everywhere.popup" timestamp="1583704117569">
+    <state x="546" y="189" width="672" height="678" key="search.everywhere.popup" timestamp="1583730298090">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="546" y="189" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1583704117569" />
+    <state x="546" y="189" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1583730298090" />
   </component>
 </project>
