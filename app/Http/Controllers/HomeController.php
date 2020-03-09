@@ -12,18 +12,14 @@ class HomeController extends Controller
         $this->middleware('auth');
     }
 
-    public function index(MyTwitterService $twitterService)
+    public function index()
     {
         $entries = Entry::where('user_id', auth()->id())->get();
 
-        if ($twitterConnected = auth()->user()->isConnectedToTwitter()) {
-            $tweets = $twitterService->getTweets(auth()->user());
-        } else {
-            $tweets = [];
-        }
+        $twitterConnected = auth()->user()->isConnectedToTwitter();
 
         return view('home', compact(
-            'entries', 'tweets', 'twitterConnected'
+            'entries', 'twitterConnected'
         ));
     }
 

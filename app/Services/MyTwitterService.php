@@ -33,7 +33,7 @@ class MyTwitterService
             ->toArray();
 
         foreach ($tweets as $key => $tweet) {
-            $tweets[$key]['hidden'] = in_array($tweet['id'], $hiddenTweets);
+            $tweets[$key]['hidden'] = in_array($tweet['id_str'], $hiddenTweets);
         }
 
         return $tweets;

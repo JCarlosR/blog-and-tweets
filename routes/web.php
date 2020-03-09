@@ -23,9 +23,6 @@ Route::get('/twitter/login', 'TwitterController@login')->name('twitter.login');
 Route::get('/twitter/callback', 'TwitterController@callback')->name('twitter.callback');
 Route::get('/twitter/error', 'TwitterController@error')->name('twitter.error');
 Route::get('/twitter/logout', 'TwitterController@logout')->name('twitter.logout');
-// Tweets
-Route::get('/tweets', 'TweetController@update');
-
 
 // Public routes
 Route::get('/', 'GuestController@index');
