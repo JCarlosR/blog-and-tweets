@@ -14,9 +14,20 @@
             <div class="card">
                 <div class="card-header">Tweets</div>
 
-                <div class="card-body">
-                    Twitter API (soon)
-                </div>
+                @if ($twitterConnected)
+                    <ul class="list-group list-group-flush">
+                        @foreach ($tweets as $tweet)
+                            <li class="list-group-item">
+                                <p><small>{{ $tweet['created_at'] }}</small></p>
+                                <p>{{ $tweet['text'] }}</p>
+                            </li>
+                        @endforeach
+                    </ul>
+                @else
+                    <div class="card-body">
+                        This user has not linked his or her Twitter account yet.
+                    </div>
+                @endif
             </div>
         </div>
 
