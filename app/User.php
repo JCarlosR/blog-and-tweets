@@ -41,4 +41,10 @@ class User extends Authenticatable
     {
         return 'username';
     }
+
+    // $user->entries
+    public function entries()
+    {
+        return $this->hasMany(Entry::class);
+    }
 }
